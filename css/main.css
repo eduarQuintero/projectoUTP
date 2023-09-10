@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Permic&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.container .header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; }
+  .container .header .contenedor_titulo {
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    box-shadow: 1px 2px 12px green; }
+    .container .header .contenedor_titulo p {
+      font-size: 23px;
+      font-family: 'Noto Sans Old Permic', sans-serif;
+      color: white; }
+
+.container .nav {
+  height: 70px;
+  background-color: black; }
+  .container .nav .contenedor_paginas {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .container .nav .contenedor_paginas a {
+      text-decoration: none;
+      text-align: center;
+      font-family: 'Noto Sans Old Permic', sans-serif;
+      border-radius: 3px;
+      padding: 13px 6px;
+      font-size: 12px;
+      background-color: green;
+      color: white;
+      transition: ease 0.7s; }
+      .container .nav .contenedor_paginas a:hover {
+        background-color: white;
+        color: black; }
+
+.container .seccion_conocenos h2 {
+  font-family: 'Noto Sans Old Permic', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding: 7px;
+  background-color: black;
+  color: green; }
+
+.container .seccion_conocenos .descripcion_principal {
+  background-color: black;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+  .container .seccion_conocenos .descripcion_principal .descripcion {
+    border: 1px solid green;
+    box-shadow: 1px 1px 10px green;
+    font-family: 'Noto Sans Old Permic', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    width: 300px;
+    border-radius: 4px;
+    padding: 6px;
+    color: white; }
+  .container .seccion_conocenos .descripcion_principal .descripcion_img {
+    height: 200px;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 4px; }
+    .container .seccion_conocenos .descripcion_principal .descripcion_img img {
+      height: 200px;
+      width: 280px; }
+
+.container .seccion_mapa {
+  background-color: black; }
+  .container .seccion_mapa h2 {
+    font-family: 'Noto Sans Old Permic', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 7px;
+    background-color: black;
+    color: green; }
+  .container .seccion_mapa .mapa {
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .container .seccion_mapa .horarios {
+    box-shadow: 1px 1px 10px green;
+    height: 150px; }
+    .container .seccion_mapa .horarios .titulo_horario {
+      color: green;
+      font-size: 17px;
+      font-family: 'Noto Sans Old Permic', sans-serif; }
+    .container .seccion_mapa .horarios .horas {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      height: 80px; }
+      .container .seccion_mapa .horarios .horas p {
+        color: white;
+        font-family: 'Noto Sans Old Permic', sans-serif;
+        font-size: 15px; }
