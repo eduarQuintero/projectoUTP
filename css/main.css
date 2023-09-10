@@ -113,3 +113,15 @@
         color: white;
         font-family: 'Noto Sans Old Permic', sans-serif;
         font-size: 15px; }
+
+@media all and (min-width: 768px) {
+  .container main .seccion_conocenos .descripcion_principal {
+    flex-direction: row;
+    border: 1px solid green; }
+  .container main .seccion_mapa .mapa {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center; }
+    .container main .seccion_mapa .mapa iframe {
+      width: 100%; } }

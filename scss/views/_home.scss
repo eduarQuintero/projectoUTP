@@ -138,3 +138,28 @@
         }
     }
 }
+
+
+@media all and (min-width:768px) {
+    .container {
+        main {
+            .seccion_conocenos {
+                .descripcion_principal {
+                    flex-direction: row;
+                    border: 1px solid green;
+                }
+            }
+            .seccion_mapa {
+                .mapa {
+                    display: flex;
+                    width: 80%;
+                    justify-content: center;
+                    align-items: center;
+                    iframe {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
