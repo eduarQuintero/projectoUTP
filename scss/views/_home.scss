@@ -53,26 +53,30 @@
         }
     }
     .seccion_conocenos {
-        // border: 3px solid red;
-        h2 {
-            // border: 1px solid green;
-            font-family: 'Noto Sans Old Permic', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding: 7px;
-            background-color: black;
-            color: green;
+        border: 2px solid red;
+        background-color: black;
+        height: 420px;
+        .titulo_principal {
+            // border: 1px solid blue;
+            height: 50px;
+            h2 {
+                font-family: 'Noto Sans Old Permic', sans-serif;
+                font-size: 25px;
+                text-align: center;
+                padding: 7px;
+                // background-color: black;
+                color: green;
+            }
         }
         .descripcion_principal {
             // border: 1px solid blue;
-            background-color: black;
-            height: 350px;
+            height: 370px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
-            .descripcion {
-                border: 1px solid green;
+            .descripcion_texto {
+                // border: 1px solid green;
                 box-shadow: 1px 1px 10px green;
                 font-family: 'Noto Sans Old Permic', sans-serif;
                 font-size: 14px;
@@ -96,14 +100,18 @@
         }
     }
     .seccion_mapa {
+        border: 1px solid green;
         background-color: black;
-        h2 {
-            font-family: 'Noto Sans Old Permic', sans-serif;
-            font-size: 25px;
-            text-align: center;
-            padding: 7px;
-            background-color: black;
-            color: green;
+        height: 480px;
+        .titulo_principal_mapa {
+            h2 {
+                font-family: 'Noto Sans Old Permic', sans-serif;
+                font-size: 25px;
+                text-align: center;
+                padding: 7px;
+                background-color: black;
+                color: green;
+            }
         }
         .mapa {
             // border: 4px solid blue;
