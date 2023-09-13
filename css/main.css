@@ -46,25 +46,24 @@
         background-color: white;
         color: black; }
 
-.container .seccion_conocenos {
-  border: 2px solid red;
+.container main .seccion_conocenos {
   background-color: black;
   height: 420px; }
-  .container .seccion_conocenos .titulo_principal {
+  .container main .seccion_conocenos .titulo_principal {
     height: 50px; }
-    .container .seccion_conocenos .titulo_principal h2 {
+    .container main .seccion_conocenos .titulo_principal h2 {
       font-family: 'Noto Sans Old Permic', sans-serif;
       font-size: 25px;
       text-align: center;
       padding: 7px;
       color: green; }
-  .container .seccion_conocenos .descripcion_principal {
+  .container main .seccion_conocenos .descripcion_principal {
     height: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around; }
-    .container .seccion_conocenos .descripcion_principal .descripcion_texto {
+    .container main .seccion_conocenos .descripcion_principal .descripcion_texto {
       box-shadow: 1px 1px 10px green;
       font-family: 'Noto Sans Old Permic', sans-serif;
       font-size: 14px;
@@ -73,59 +72,57 @@
       border-radius: 4px;
       padding: 6px;
       color: white; }
-    .container .seccion_conocenos .descripcion_principal .descripcion_img {
+    .container main .seccion_conocenos .descripcion_principal .descripcion_img {
       height: 200px;
       width: 280px;
       overflow: hidden;
       border-radius: 4px; }
-      .container .seccion_conocenos .descripcion_principal .descripcion_img img {
+      .container main .seccion_conocenos .descripcion_principal .descripcion_img img {
         height: 200px;
         width: 280px; }
 
-.container .seccion_mapa {
+.container main .seccion_mapa {
   border: 1px solid green;
   background-color: black;
-  height: 480px; }
-  .container .seccion_mapa .titulo_principal_mapa h2 {
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .container main .seccion_mapa .titulo_principal_mapa h2 {
     font-family: 'Noto Sans Old Permic', sans-serif;
     font-size: 25px;
     text-align: center;
     padding: 7px;
     background-color: black;
     color: green; }
-  .container .seccion_mapa .mapa {
+  .container main .seccion_mapa .mapa {
+    width: 280px;
     height: 300px;
     overflow: hidden;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center; }
-  .container .seccion_mapa .horarios {
-    box-shadow: 1px 1px 10px green;
+    align-items: center;
+    border-radius: 3px; }
+    .container main .seccion_mapa .mapa iframe {
+      width: 100%;
+      height: 100%; }
+  .container main .seccion_mapa .horarios {
     height: 150px; }
-    .container .seccion_mapa .horarios .titulo_horario {
-      color: green;
-      font-size: 17px;
-      font-family: 'Noto Sans Old Permic', sans-serif; }
-    .container .seccion_mapa .horarios .horas {
+    .container main .seccion_mapa .horarios .titulo_horarios {
+      padding: 6px; }
+      .container main .seccion_mapa .horarios .titulo_horarios .titulo_horario {
+        text-align: center;
+        color: green;
+        font-size: 17px;
+        font-family: 'Noto Sans Old Permic', sans-serif; }
+    .container main .seccion_mapa .horarios .horas {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      height: 80px; }
-      .container .seccion_mapa .horarios .horas p {
+      height: 80px;
+      padding: 0 5px; }
+      .container main .seccion_mapa .horarios .horas p {
         color: white;
         font-family: 'Noto Sans Old Permic', sans-serif;
         font-size: 15px; }
-
-@media all and (min-width: 768px) {
-  .container main .seccion_conocenos .descripcion_principal {
-    flex-direction: row;
-    border: 1px solid green; }
-  .container main .seccion_mapa .mapa {
-    display: flex;
-    width: 80%;
-    justify-content: center;
-    align-items: center; }
-    .container main .seccion_mapa .mapa iframe {
-      width: 100%; } }
