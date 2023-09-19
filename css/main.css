@@ -240,6 +240,20 @@ header {
           transform: translate(-3px, -2px);
           box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329); }
 
+/*ESTILOS PARA SECCION MAPA*/
+body .container main .seccionMapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white; }
+  body .container main .seccionMapa .contenidoMapa {
+    text-align: center; }
+    body .container main .seccionMapa .contenidoMapa .imagenMapa {
+      height: 300px;
+      width: 230px;
+      overflow: hidden; }
+
 /*ESTILOS PARA EL FOOTER*/
 footer {
   background-color: black; }
@@ -268,7 +282,19 @@ footer {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
-    gap: 20px; } }
+    gap: 20px; }
+  body .container main .seccionMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+    body .container main .seccionMapa .contenidoMapa {
+      text-align: center; }
+      body .container main .seccionMapa .contenidoMapa .imagenMapa {
+        height: 300px;
+        width: 400px;
+        overflow: hidden; } }
 
 /*ESTILOS PARA INDEX DESKTOP*/
 @media all and (min-width: 1025px) {
@@ -287,7 +313,19 @@ footer {
     padding: 0 20px; }
   .seccionCards {
     grid-template-columns: repeat(4, auto);
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  body .container main .seccionMapa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; }
+    body .container main .seccionMapa .contenidoMapa {
+      text-align: center; }
+      body .container main .seccionMapa .contenidoMapa .imagenMapa {
+        height: 430px;
+        width: 900px;
+        overflow: hidden; } }
 
 /*
     EL EXTEND FUE INCLUIDO EN EL TEXTAREA DE LA ZONA

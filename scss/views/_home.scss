@@ -133,6 +133,41 @@
     }
 }
 
+/*ESTILOS PARA SECCION MAPA*/
+
+body {
+    .container {
+        main {
+            .seccionMapa {
+                // border: 1px solid red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                .titulo_mapa {
+                    // border: 1px solid green;
+                }
+                .contenidoMapa {
+                    // border: 1px solid yellow;
+                    text-align: center;
+                    .textoMapa {
+                        // border: 1px solid lightsalmon;
+                    }
+                    .imagenMapa {
+                        // border: 1px solid red;
+                        height: 300px;
+                        width: 230px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
 /*ESTILOS PARA EL FOOTER*/
 
 footer {
@@ -179,6 +214,37 @@ footer {
         gap: 20px;
     }
 
+    body {
+        .container {
+            main {
+                .seccionMapa {
+                    // border: 1px solid red;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    .titulo_mapa {
+                        // border: 1px solid green;
+                    }
+                    .contenidoMapa {
+                        // border: 1px solid yellow;
+                        text-align: center;
+                        .textoMapa {
+                            // border: 1px solid lightsalmon;
+                        }
+                        .imagenMapa {
+                            // border: 1px solid red;
+                            height: 300px;
+                            width: 400px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 }
 
@@ -209,6 +275,37 @@ footer {
     .seccionCards {
         grid-template-columns: repeat(4, auto);
         justify-content: space-between;
+    }
+
+    body {
+        .container {
+            main {
+                .seccionMapa {
+                    // border: 1px solid red;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+                    .titulo_mapa {
+                        // border: 1px solid green;
+                    }
+                    .contenidoMapa {
+                        // border: 1px solid yellow;
+                        text-align: center;
+                        .textoMapa {
+                            // border: 1px solid lightsalmon;
+                        }
+                        .imagenMapa {
+                            // border: 1px solid red;
+                            height: 430px;
+                            width: 900px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
     }
 
 
