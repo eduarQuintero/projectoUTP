@@ -1,3 +1,8 @@
-@import "base/reset";
-@import "base/typo";
-@import "views/home";
+// IMPORTANDO LOS ARCHIVOS SASS
+@import './base/reset';
+@import './utilities/variables';
+@import './layout/header';
+@import './views/home';
+@import './views/conocenos';
+@import './views/hombreMujer';
+@import './views/contacto';

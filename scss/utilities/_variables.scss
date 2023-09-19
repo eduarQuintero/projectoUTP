@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+// VARIABLES
+
+$lineaDivisoria: rgba(255, 255, 255, 0.356);
+$tituloPrincipal: 'Playfal Display', serif;
+$shadow: 2px 2px 5px rgba(255, 255, 255, 0.329);
+$fondoCard: rgba(102, 100, 100, 0.418);
+$shadowCard: 3px 1px 3px rgba(255, 255, 255, 0.329);
+
+
+// MAPS
+$boton: (
+    bg-color: rgba(250, 1, 1, 0.671),
+    borde-redondeado: 5px,
+    color: white
+);
+
+
+// MIXINS
+
+// este mixin aplica dentro de sus propiedades un font-family que
+// llama a otra variable llamada tituloPrincipal
+@mixin estilosPrincipales {
+    color: white;
+    font-family: $tituloPrincipal;
+    font-size: 30px;
+}
+
+// EXTEND
+/*
+    EL EXTEND FUE INCLUIDO EN EL TEXTAREA DE LA ZONA
+    DE CONTACTO PARA HEREDAR LAS PROPIEDADES DE LOS INPUT
+*/
+%textarea {
+    width: 90%;
+    border-radius: 5px;
+    height: 35px;
+    padding-left: 5px;
+}

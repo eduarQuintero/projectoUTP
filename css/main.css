@@ -1,128 +1,480 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Old+Permic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; }
 
-.container .header {
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
   background-color: black; }
-  .container .header .contenedor_titulo {
-    border-radius: 4px;
-    width: 150px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    box-shadow: 1px 2px 12px green; }
-    .container .header .contenedor_titulo p {
-      font-size: 23px;
-      font-family: 'Noto Sans Old Permic', sans-serif;
-      color: white; }
 
-.container .nav {
-  height: 70px;
-  background-color: black; }
-  .container .nav .contenedor_paginas {
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    .container .nav .contenedor_paginas a {
-      text-decoration: none;
-      text-align: center;
-      font-family: 'Noto Sans Old Permic', sans-serif;
-      border-radius: 3px;
-      padding: 13px 6px;
-      font-size: 12px;
-      background-color: green;
-      color: white;
-      transition: ease 0.7s; }
-      .container .nav .contenedor_paginas a:hover {
-        background-color: white;
-        color: black; }
+main {
+  width: 85%; }
 
-.container main .seccion_conocenos {
-  background-color: black;
-  height: 420px; }
-  .container main .seccion_conocenos .titulo_principal {
-    height: 50px; }
-    .container main .seccion_conocenos .titulo_principal h2 {
-      font-family: 'Noto Sans Old Permic', sans-serif;
-      font-size: 25px;
-      text-align: center;
-      padding: 7px;
-      color: green; }
-  .container main .seccion_conocenos .descripcion_principal {
-    height: 370px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
-    .container main .seccion_conocenos .descripcion_principal .descripcion_texto {
-      box-shadow: 1px 1px 10px green;
-      font-family: 'Noto Sans Old Permic', sans-serif;
-      font-size: 14px;
-      text-align: center;
-      width: 300px;
-      border-radius: 4px;
-      padding: 6px;
-      color: white; }
-    .container main .seccion_conocenos .descripcion_principal .descripcion_img {
-      height: 200px;
-      width: 280px;
-      overflow: hidden;
-      border-radius: 4px; }
-      .container main .seccion_conocenos .descripcion_principal .descripcion_img img {
-        height: 200px;
-        width: 280px; }
-
-.container main .seccion_mapa {
-  border: 1px solid green;
-  background-color: black;
-  height: 480px;
+.container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .container main .seccion_mapa .titulo_principal_mapa h2 {
-    font-family: 'Noto Sans Old Permic', sans-serif;
+
+@media all and (min-width: 1025px) {
+  main {
+    padding-top: 80px;
+    width: 85%; } }
+
+/*
+    EL EXTEND FUE INCLUIDO EN EL TEXTAREA DE LA ZONA
+    DE CONTACTO PARA HEREDAR LAS PROPIEDADES DE LOS INPUT
+*/
+.formulario textarea {
+  width: 90%;
+  border-radius: 5px;
+  height: 35px;
+  padding-left: 5px; }
+
+/*
+    EL EXTEND FUE INCLUIDO EN EL TEXTAREA DE LA ZONA
+    DE CONTACTO PARA HEREDAR LAS PROPIEDADES DE LOS INPUT
+*/
+.formulario textarea {
+  width: 90%;
+  border-radius: 5px;
+  height: 35px;
+  padding-left: 5px; }
+
+/*HEADER PARA LA VERSION MOBILE*/
+header {
+  width: 85%; }
+
+.containerHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  border-bottom: rgba(255, 255, 255, 0.356); }
+  .containerHeader .titulo {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-family: "Playfal Display", serif;
+    font-size: 30px; }
+    .containerHeader .titulo a {
+      text-decoration: none;
+      color: white;
+      font-family: "Playfal Display", serif;
+      font-size: 30px; }
+  .containerHeader .nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px; }
+    .containerHeader .nav a {
+      text-decoration: none;
+      text-align: center;
+      padding: 8px;
+      border-radius: 4px;
+      color: white;
+      background-color: rgba(250, 1, 1, 0.671);
+      cursor: pointer;
+      transition: all 0.5s; }
+      .containerHeader .nav a:hover {
+        transform: translate(-2px, -3px);
+        box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329); }
+      .containerHeader .nav a:nth-child(5) {
+        grid-column: 1/3; }
+
+/*HEADER PARA LA VERSION TABLET*/
+@media all and (min-width: 481px) {
+  header {
+    width: 85%; }
+  .containerHeader {
+    width: 100%;
+    border-bottom: rgba(255, 255, 255, 0.356);
+    padding-bottom: 10px; }
+  .nav a:hover {
+    transform: translate(-2px, -3px);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329); } }
+
+/*ESTILOS PARA LA VERSION DESKTOP*/
+@media all and (min-width: 1025px) {
+  header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    align-content: center; }
+  .containerHeader {
+    width: 87%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.356);
+    background-color: black; }
+    .containerHeader .nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      .containerHeader .nav a {
+        padding: 9px;
+        transition: all 0.5s; }
+        .containerHeader .nav a:hover {
+          transform: translate(-2px, -3px);
+          box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329); } }
+
+/*
+    EL EXTEND FUE INCLUIDO EN EL TEXTAREA DE LA ZONA
+    DE CONTACTO PARA HEREDAR LAS PROPIEDADES DE LOS INPUT
+*/
+.formulario textarea {
+  width: 90%;
+  border-radius: 5px;
+  height: 35px;
+  padding-left: 5px; }
+
+/*ESTILOS EN MOBILE*/
+/*ESTILOS PARA LA SECCION MULTIMEDIA*/
+.seccionMultimedia article {
+  color: white; }
+  .seccionMultimedia article h2 {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 25px; }
+  .seccionMultimedia article p {
+    text-align: center; }
+
+.videoMultimedia {
+  width: 100%;
+  height: 315px;
+  overflow: hidden; }
+  .videoMultimedia iframe {
+    width: 100%; }
+
+/*ESTILOS PARA LA SECCION TENDENCIA*/
+.seccionTendencia {
+  padding: 20px 0; }
+  .seccionTendencia article {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center; }
+    .seccionTendencia article h2 {
+      text-align: center;
+      padding: 10px 0;
+      font-size: 25px; }
+    .seccionTendencia article p {
+      text-align: center;
+      padding: 10px 0; }
+
+.cajaImagenTendencia {
+  width: 100%;
+  overflow: hidden;
+  height: 350px;
+  display: flex;
+  align-items: center; }
+  .cajaImagenTendencia img {
+    width: 100%; }
+
+.botonConocer {
+  padding: 10px 0;
+  margin-top: 10px;
+  transition: 0.5s; }
+  .botonConocer:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329); }
+  .botonConocer a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(250, 1, 1, 0.671);
+    padding: 10px;
+    border-radius: 5px; }
+
+/*ESTILOS PARA SECCION CARDS*/
+.seccionCards {
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .seccionCards .card {
+    width: 100%;
+    height: 510px;
+    background-color: rgba(102, 100, 100, 0.418);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329);
+    transition: all 0.7s; }
+    .seccionCards .card:hover {
+      transform: translate(-5px, -5px);
+      box-shadow: 5px 3px 6px rgba(255, 255, 255, 0.329); }
+    .seccionCards .card .imagenCard {
+      width: 100%;
+      height: 310px;
+      overflow: hidden; }
+      .seccionCards .card .imagenCard img {
+        width: 100%;
+        border-radius: 4px 4px 4px 4px; }
+    .seccionCards .card .contenidoCard {
+      color: white;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      .seccionCards .card .contenidoCard h2 {
+        font-size: 25px; }
+      .seccionCards .card .contenidoCard p {
+        padding-left: 10px; }
+      .seccionCards .card .contenidoCard a {
+        text-decoration: none;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: rgba(250, 1, 1, 0.671);
+        transition: all 0.5s; }
+        .seccionCards .card .contenidoCard a:hover {
+          transform: translate(-3px, -2px);
+          box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.329); }
+
+/*ESTILOS PARA EL FOOTER*/
+footer {
+  background-color: black; }
+  footer div {
+    background-color: black; }
+
+/*ESTILOS PARA INDEX TABLET*/
+@media all and (min-width: 481px) {
+  .seccionMultimedia {
+    display: grid;
+    grid-template-columns: 40% 60%; }
+    .seccionMultimedia .videoMultimedia {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .seccionMultimedia article {
+      padding: 0 5px; }
+  .seccionTendencia {
+    display: grid;
+    grid-template-columns: 50% 50%; }
+    .seccionTendencia article {
+      padding: 0 10px; }
+  .card {
+    width: 280px; }
+  .seccionCards {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    gap: 20px; } }
+
+/*ESTILOS PARA INDEX DESKTOP*/
+@media all and (min-width: 1025px) {
+  .seccionMultimedia {
+    padding-top: 80px;
+    grid-template-columns: 50% 50%; }
+    .seccionMultimedia article {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 20px; }
+  .seccionTendencia article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px; }
+  .seccionCards {
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between; } }
+
+/*
+    EL EXTEND FUE INCLUIDO EN EL TEXTAREA DE LA ZONA
+    DE CONTACTO PARA HEREDAR LAS PROPIEDADES DE LOS INPUT
+*/
+.formulario textarea {
+  width: 90%;
+  border-radius: 5px;
+  height: 35px;
+  padding-left: 5px; }
+
+/*ESTILOS PARA CONOCENOS MOBILE*/
+/*ESTILOS PARA BANNER CONOCENOS*/
+.bannerConocenos {
+  width: 100%; }
+  .bannerConocenos img {
+    width: 100%; }
+
+/*ESTILOS PARA LA DESCRIPCION CONOCENOS*/
+.descripcionConocenos {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .descripcionConocenos h2 {
+    padding: 100px 0;
+    font-size: 30px;
+    font-family: "Playfal Display", serif; }
+  .descripcionConocenos p {
+    text-align: center;
+    padding: 0 10px; }
+
+/*ESTILOS PARA LA SECCION IMAGENES CONOCENOS*/
+.imagenesReferencialesConocenos article {
+  margin-bottom: 15px;
+  width: 100%;
+  height: 285px;
+  overflow: hidden;
+  margin-top: 20px;
+  box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329);
+  transition: all 0.5s; }
+  .imagenesReferencialesConocenos article:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329); }
+  .imagenesReferencialesConocenos article img {
+    width: 100%; }
+
+/*ESTILOS PARA CONOCENOS TABLET*/
+@media all and (min-width: 481px) {
+  .descripcionConocenos h2 {
+    font-size: 40px;
+    font-family: "Playfal Display", serif; }
+  .imagenesReferencialesConocenos {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 20px; }
+    .imagenesReferencialesConocenos article {
+      width: 300px;
+      height: 342px; }
+      .imagenesReferencialesConocenos article:nth-child(3) {
+        margin-bottom: 30px; } }
+
+/*ESTILOS PARA CONOCENOS DESKTOP*/
+@media all and (min-width: 1025px) {
+  .imagenesReferencialesConocenos {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between; }
+    .imagenesReferencialesConocenos Article {
+      width: 200px;
+      height: 240px; } }
+
+/*
+    EL EXTEND FUE INCLUIDO EN EL TEXTAREA DE LA ZONA
+    DE CONTACTO PARA HEREDAR LAS PROPIEDADES DE LOS INPUT
+*/
+.formulario textarea {
+  width: 90%;
+  border-radius: 5px;
+  height: 35px;
+  padding-left: 5px; }
+
+/*ESTIOS PARA LA SECCION HOMBRE Y MUJER MOBILE*/
+.tituloRopa {
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Playfal Display", serif; }
+
+/*ESTILOS PARA LA SECCION HOMBRE Y MUJER TABLET*/
+@media all and (min-width: 481px) {
+  .seccionCard {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around; } }
+
+/*ESTILOS PARA LA SECCION HOMBRE Y MUJER DESKTOP*/
+@media all and (min-width: 1025px) {
+  .tituloRopa {
+    color: white; }
+  .seccionCard {
+    grid-template-columns: repeat(4, auto); } }
+
+/*
+    EL EXTEND FUE INCLUIDO EN EL TEXTAREA DE LA ZONA
+    DE CONTACTO PARA HEREDAR LAS PROPIEDADES DE LOS INPUT
+*/
+.formulario textarea {
+  width: 90%;
+  border-radius: 5px;
+  height: 35px;
+  padding-left: 5px; }
+
+/*ESTILOS PARA LA SECCINO CONTACTO MOBILE*/
+.informacionContacto h2 {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Playfal Display", serif;
+  font-size: 40px; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .formulario label {
+    color: white;
+    width: 100%;
+    display: inline-block;
     font-size: 25px;
     text-align: center;
-    padding: 7px;
-    background-color: black;
-    color: green; }
-  .container main .seccion_mapa .mapa {
-    width: 280px;
-    height: 300px;
-    overflow: hidden;
+    margin: 15px 0; }
+  .formulario input {
+    width: 90%;
+    border-radius: 5px;
+    height: 35px;
+    padding-left: 5px; }
+  .formulario textarea {
+    height: 180px;
+    margin-bottom: 20px; }
+  .formulario .boton {
+    margin-bottom: 15px;
+    color: white;
+    background-color: rgba(250, 1, 1, 0.671);
+    border-radius: 5px;
+    transition: 0.5s; }
+    .formulario .boton:hover {
+      transform: translate(-5px, -5px);
+      cursor: pointer;
+      box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329); }
+
+.imagenContacto {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 4px; }
+  .imagenContacto img {
+    width: 100%;
+    border-radius: 4px;
+    transition: 0.5s; }
+    .imagenContacto img:hover {
+      transform: translate(-3px, -3px);
+      box-shadow: 3px 1px 3px rgba(255, 255, 255, 0.329); }
+
+/*ESTILOS  CONTACTO TABLET*/
+@media all and (min-width: 481px) {
+  .imagenContacto {
+    width: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 3px; }
-    .container main .seccion_mapa .mapa iframe {
-      width: 100%;
-      height: 100%; }
-  .container main .seccion_mapa .horarios {
-    height: 150px; }
-    .container main .seccion_mapa .horarios .titulo_horarios {
-      padding: 6px; }
-      .container main .seccion_mapa .horarios .titulo_horarios .titulo_horario {
-        text-align: center;
-        color: green;
-        font-size: 17px;
-        font-family: 'Noto Sans Old Permic', sans-serif; }
-    .container main .seccion_mapa .horarios .horas {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      height: 80px;
-      padding: 0 5px; }
-      .container main .seccion_mapa .horarios .horas p {
-        color: white;
-        font-family: 'Noto Sans Old Permic', sans-serif;
-        font-size: 15px; }
+    padding-left: 20%; }
+  .informacionContacto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center; }
+    .informacionContacto h2 {
+      grid-column: 1/3; } }
+
+/*ESTILOS PARA CONTACTO DESKTOP*/
+@media all and (min-width: 1025px) {
+  .imagenContacto {
+    width: 75%;
+    height: 800px;
+    padding-left: 20%; } }

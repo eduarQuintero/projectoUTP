@@ -1,59 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="css/main.css">
-        <title>Todo Moda</title>
+        <meta name="keywords" content="VERANO, PARIS, 2022, TENDENCIA, OTOÑO, EUROPEA, URBANO">
+        <meta name="description" content="Lo último de la moda europea y lo que marca tendencia hoy">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="icon" href="./img/iconLogo.png">
+        <title>INICIO | TODO MODA</title>
     </head>
     <body>
         <div class="container">
-            <header class="header">
-                <div class="contenedor_titulo">
-                    <p>TODO MODA</p>
+            <header>
+                <div class="containerHeader">
+                    <h1 class="titulo"><a href="#">TODO MODA</a></h1>
+                    <nav class="nav">
+                        <a href="#">INICIO</a>
+                        <a href="./pages/conocenos.html">CONOCENOS</a>
+                        <a href="./pages/hombre.html">HOMBRE</a>
+                        <a href="./pages/mujer.html">MUJER</a>
+                        <a href="./pages/contacto.html">CONTACTO</a>
+                    </nav>
                 </div>
             </header>
-            <nav class="nav">
-                <div class="contenedor_paginas">
-                    <a href="#">INICIO</a>
-                    <a href="#">NOSOTROS</a>
-                    <a href="#">PREGUNTAS FRECUENTES</a>
-                </div>
-            </nav>
             <main>
-                <section class="seccion_conocenos">
-                    <div class="titulo_principal">
-                        <h2>¿QUIENES SOMOS?</h2>
+                <section class="seccionMultimedia">
+                    <article>
+                        <h2>VERANO PARIS 2022</h2>
+                        <p>
+                            El desfile mas grande de Paris se realizó con gran aceptación entre el público asistente. Pudimos ver lo último en la edición de colección de grandes diseñadores de la última decada, ademas el certamen fue respaldado por las firmas mas importantes del mundo de la moda.
+                        </p>
+                    </article>
+                    <div class="videoMultimedia">
+                        <iframe class="videoDesfile" width="560" height="315" src="https://www.youtube.com/embed/BLxM7yxo6Yk?controls=0&amp;start=188&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
-                    <article class="descripcion_principal">
-                        <div class="descripcion_texto">
-                            Somos una empresa nacional dedidaca al mundo de la moda, nuestro meta como empresa es difundir la moda a travez de to el pais.
-                        </div>
-                        <div class="descripcion_img">
-                            <img src="img/quienesSomosImagen.jpg" alt="imagen referencial moda">
+                </section>
+                <section class="seccionTendencia">
+                    <div class="cajaImagenTendencia">
+                        <img src="./img/modeloInvierno.jpg" alt="imagen_lo_ultimo_en_moda">
+                    </div>
+                    <article>
+                        <h2>TENDENCIA EUROPEA</h2>
+                        <p>
+                            La propuesta otoño - invierno 2022 es relevante. Solo que quizás sea la próxima temporada cuando vuelvan a sobresalir y de convertirse, una vez más, en tendencia masica. La relación conceptual entre la libertad del verano y el movimiento que implica uno de los adornos más antiguos de la historia de la vestimenta está ahí.
+                        </p>
+                        <div class="botonConocer">
+                            <a href="#">CONOCER</a>
                         </div>
                     </article>
                 </section>
-                <section class="seccion_mapa">
-                    <div class="titulo_principal_mapa">
-                        <h2>ENCUENTRANOS</h2>
-                    </div>
-                    <div class="mapa">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15606.042514241068!2d-77.09096964999999!3d-12.077154899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1694307139383!5m2!1ses-419!2spe" width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                    <article class="horarios">
-                        <div class="titulo_horarios">
-                            <h2 class="titulo_horario">Horario de atención</h2>
+                <section class="seccionCards">
+                    <article class="card">
+                        <div class="imagenCard">
+                            <img src="./img/modeloCard1.jpg" alt="imagen_referencial_de_ropa">
                         </div>
-                        <div class="horas">
-                            <p>Lunes a viernes : 9:00 am - 8:00 pm</p>
-                            <p>Sabado y Domingos: 10:00 am - 6:00 pm</p>
+                        <div class="contenidoCard">
+                            <h2>Cardigan formal</h2>
+                            <p>
+                                Cardigan de estilo europeo con diseño de cuadros, de gran estilo y formal.
+                            </p>
+                            <a href="#">Leer mas</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="imagenCard">
+                            <img src="./img/imagenCard2.jpg" alt="imagen_referencial_de_ropa">
+                        </div>
+                        <div class="contenidoCard">
+                            <h2>Estilo urbano</h2>
+                            <p>
+                                Combinación del estilo urbano con blusa de escote pronunciado y pantalon tobillero.
+                            </p>
+                            <a href="#">Leer mas</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="imagenCard">
+                            <img src="./img/imagenCard3.jpg" alt="imagen_referencial_de_ropa">
+                        </div>
+                        <div class="contenidoCard">
+                            <h2>Conjunto urbano</h2>
+                            <p>
+                                Conjunto en color oscuro, tendencia urbana 2022 perfecto para andar en al gran ciudad.
+                            </p>
+                            <a href="#">Leer mas</a>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="imagenCard">
+                            <img src="./img/imagenCard4.jpg" alt="imagen_referencial_de_ropa">
+                        </div>
+                        <div class="contenidoCard">
+                            <h2>Estilo semiformal</h2>
+                            <p>
+                                Gran estilo a nivel formal pero sin perder la esencia de la calle, un estilo suelto.
+                            </p>
+                            <a href="#">Leer mas</a>
                         </div>
                     </article>
                 </section>
             </main>
-            <footer>
-                
+            <footer class="bg-dark text-white text-center text-lg-start border-top">
+                <div class="container p-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                            <h2 class="text-uppercase">Todo Moda</h2>
+                            <p>
+                                Todo moda es una tienda de ropa para damas y caballeros con un excelente gusto en la moda, el buen vestir define la personalidad de cada persona, nosotros estamos para combinar el buen estilo con la elegancia, desde hace muchos años la marca número uno de Latinoamerica.
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h2 class="text-uppercase fs-5">Mas de Todo Moda</h2>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <a href="#!" class="text-white">Moda</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Belleza</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Living</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Compras</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                            <h2 class="text-uppercase mb-0 fs-5">ENCUENTRANOS</h2>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="#!" class="text-white">Chile</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Peru</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Mésico</a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="text-white">Argentina</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="text-center p-3"
+                >
+                    © 2020 Copyright:
+                    <a class="text-white" href="#">TodoModa.com</a>
+                </div>
             </footer>
         </div>
     </body>

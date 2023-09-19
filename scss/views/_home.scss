@@ -1,170 +1,215 @@
-.container {
-    .header {
-        // border: 1px solid red;
-        height: 80px;
+@import '../utilities/variables';
+
+/*ESTILOS EN MOBILE*/
+
+/*ESTILOS PARA LA SECCION MULTIMEDIA*/
+.seccionMultimedia {
+    article {
+        color: white;
+        h2 {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 25px;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.videoMultimedia {
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+    iframe {
+        width: 100%;
+    }
+}
+
+/*ESTILOS PARA LA SECCION TENDENCIA*/
+
+.seccionTendencia {
+    padding: 20px 0;
+    article {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        color: white;
         align-items: center;
-        background-color: black;
-        .contenedor_titulo {
-            // border: 1px solid green;
-            border-radius: 4px;
-            width: 150px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 3px;
-            box-shadow: 1px 2px 12px green;
-            p {
-                font-size: 23px;
-                // border: 1px solid blue;
-                font-family: 'Noto Sans Old Permic', sans-serif;;
-                color: white;
-            }
+        h2 {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 25px;
+        }
+        p {
+            text-align: center;
+            padding: 10px 0;
         }
     }
-    .nav {
-        // border: 1px solid blue;
-        height: 70px;
-        background-color: black;
-        .contenedor_paginas {
-            // border: 1px solid red;
-            height: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            a {
-                // border: 1px solid purple;
-                text-decoration: none;
-                text-align: center;
-                font-family: 'Noto Sans Old Permic', sans-serif;
-                border-radius: 3px;
-                padding: 13px 6px;
-                font-size: 12px;
-                background-color: green;
-                color: white;
-                transition: ease 0.7s;
-                &:hover {
-                    background-color: white;
-                    color: black;
-                }
-            }
-        }
+}
+
+.cajaImagenTendencia {
+    width: 100%;
+    overflow: hidden;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%;
     }
-    main {
-        .seccion_conocenos {
-            // border: 2px solid red;
-            background-color: black;
-            height: 420px;
-            .titulo_principal {
-                // border: 1px solid blue;
-                height: 50px;
-                h2 {
-                    font-family: 'Noto Sans Old Permic', sans-serif;
-                    font-size: 25px;
-                    text-align: center;
-                    padding: 7px;
-                    // background-color: black;
-                    color: green;
-                }
-            }
-            .descripcion_principal {
-                // border: 1px solid blue;
-                height: 370px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-around;
-                .descripcion_texto {
-                    // border: 1px solid green;
-                    box-shadow: 1px 1px 10px green;
-                    font-family: 'Noto Sans Old Permic', sans-serif;
-                    font-size: 14px;
-                    text-align: center;
-                    width: 300px;
-                    border-radius: 4px;
-                    padding: 6px;
-                    color: white;
-                }
-                .descripcion_img {
-                    // border: 1px solid green;
-                    height: 200px;
-                    width: 280px;
-                    overflow: hidden;
-                    border-radius: 4px;
-                    img {
-                        height: 200px;
-                        width: 280px;
-                    }
-                }
+}
+
+.botonConocer {
+    padding: 10px 0;
+    margin-top: 10px;
+    transition: 0.5s;
+    &:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: $shadow;
+    }
+    a {
+        text-decoration: none;
+        color: map-get($map: $boton, $key: color);
+        background-color: map-get($map: $boton, $key: bg-color);
+        padding: 10px;
+        border-radius: map-get($map: $boton, $key: borde-redondeado);
+    }
+}
+
+/*ESTILOS PARA SECCION CARDS*/
+
+.seccionCards {
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .card {
+        width: 100%;
+        height: 510px;
+        background-color: $fondoCard;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        box-shadow: $shadowCard;
+        transition: all 0.7s;
+        &:hover {
+            transform: translate(-5px, -5px);
+            box-shadow: 5px 3px 6px rgba(255, 255, 255, 0.329);
+        }
+        .imagenCard {
+            width: 100%;
+            height: 310px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                border-radius: 4px 4px 4px 4px;
             }
         }
-        .seccion_mapa {
-            border: 1px solid green;
-            background-color: black;
-            height: 480px;
+        .contenidoCard {
+            color: white;
+            height: 200px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            .titulo_principal_mapa {
-                // border: 1px solid blue;
-                h2 {
-                    font-family: 'Noto Sans Old Permic', sans-serif;
-                    font-size: 25px;
-                    text-align: center;
-                    padding: 7px;
-                    background-color: black;
-                    color: green;
-                }
+            justify-content: space-evenly;
+            h2 {
+                font-size: 25px;
             }
-            .mapa {
-                // border: 4px solid blue;
-                width: 280px;
-                height: 300px;
-                overflow: hidden;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 3px;
-                iframe {
-                    // border: 10px solid red;
-                    width: 100%;
-                    height: 100%;
-                }
+            p {
+                padding-left: 10px;
             }
-            .horarios {
-                // border: 3px solid green;
-                height: 150px;
-                .titulo_horarios {
-                    // border: 1px solid red;
-                    padding: 6px;
-                    .titulo_horario {
-                        // border: 1px solid green;
-                        text-align: center;
-                        color: green;
-                        font-size: 17px;
-                        font-family: 'Noto Sans Old Permic', sans-serif;
-                    }
-                }
-                .horas {
-                    // border: 1px solid yellow;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-                    height: 80px;
-                    padding: 0 5px;
-                    p {
-                        color: white;
-                        font-family: 'Noto Sans Old Permic', sans-serif;
-                        font-size: 15px;
-                    }
+            a {
+                text-decoration: none;
+                color: map-get($map: $boton, $key: color);
+                padding: 5px;
+                border-radius: map-get($map: $boton, $key: borde-redondeado);
+                background-color: map-get($map: $boton, $key: bg-color);
+                transition: all 0.5s;
+                &:hover {
+                    transform: translate(-3px, -2px);
+                    box-shadow: $shadow;
                 }
             }
         }
     }
-    footer {
-        
+}
+
+/*ESTILOS PARA EL FOOTER*/
+
+footer {
+    background-color: black;
+    div {
+        background-color: black;
     }
+}
+
+
+/*ESTILOS PARA INDEX TABLET*/
+
+@media all and (min-width: 481px) {
+    
+    .seccionMultimedia {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        .videoMultimedia {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        article {
+            padding: 0 5px;
+        }
+    }
+
+    .seccionTendencia {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        article {
+            padding: 0 10px;
+        }
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    .seccionCards {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+
+}
+
+/*ESTILOS PARA INDEX DESKTOP*/
+
+@media all and (min-width: 1025px) {
+
+    .seccionMultimedia {
+        padding-top: 80px;
+        grid-template-columns: 50% 50%;
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;
+        }
+    }
+
+    .seccionTendencia {
+        article {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0 20px;
+        }
+    }
+
+    .seccionCards {
+        grid-template-columns: repeat(4, auto);
+        justify-content: space-between;
+    }
+
+
 }
